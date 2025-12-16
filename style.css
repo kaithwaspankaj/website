@@ -1,0 +1,392 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+width: 100%;    
+}
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+box-shadow: 
+    0 1px 2px rgba(0, 0, 0, 0.06),
+    0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.logo{
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+}
+.small{
+    margin-right: 8px;
+    background-color: green;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.navbar a{
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+padding: 5px 10px;
+border-radius: 6px;
+}
+
+.navbar a:hover{
+    background-color: green;
+    color: white;
+}
+
+.navbar a.active {
+    background:green;
+    color: #fff;
+}
+
+.menu-toggle{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* hero section */
+.hero{
+    text-align: center;
+    color: white;
+font-family: sans-serif;
+}
+.container{
+    background: url("img1.jpg");
+     background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+}
+
+.hero h1{
+    font-size: 120px;
+    
+    
+}
+   
+.hero p{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+
+.demo{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.badge{
+     padding: 8px;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+.badge.green{
+    background:rgb(106, 96, 89);
+    color:white;
+}
+
+
+
+.badge.red{
+             background:rgb(115, 83, 23);
+    color: white;
+}
+
+
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+
+.course-box {
+    background:#333;
+    padding: 18px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.course-box:hover {
+    background: #008000;
+    transform: translateY(-5px);
+}
+
+
+footer {
+    background: #111;
+    color: #eee;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+footer strong {
+    color: #fff;
+}
+
+
+
+/* =========courses========
+==========================
+=========================== */
+
+
+.section-title{
+  display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color:black;
+    font-weight: bold;
+    margin-top: 25px;
+    font-family: sans-serif;
+}
+
+/* ===== FEATURES SECTION ===== */
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding: 60px 20px;
+  background: #f8fafc;
+}
+
+/* ===== CARD ===== */
+.cl {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* hover effect */
+.cl:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== TITLE ===== */
+.title {
+  grid-column: 1 / -1;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #1e293b;
+  border-left: 5px solid #2563eb;
+  padding-left: 10px;
+}
+
+/* ===== ICON ===== */
+.feature-icon {
+  font-size: 28px;
+  width: 48px;
+  height: 48px;
+  background: #e0e7ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+/* ===== TEXT ===== */
+.cl strong {
+  font-size: 1rem;
+  color: #0f172a;
+}
+
+.muted {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+/* =============
+======about========
+=================== */
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+  padding: 70px 20px;
+
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* ===== IMAGE ===== */
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  object-fit: cover;
+}
+
+/* ===== CONTENT ===== */
+.about-content {
+  flex: 1;
+}
+
+.about-content h1 {
+  font-size: 2.4rem;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* ===== BUTTON ===== */
+.about-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 26px;
+  background: #2563eb;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.about-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* ===========================
+==========contact============= 
+=============================*/
+
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+  padding: 70px 20px;
+
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #1e293b;
+}
+
+.contact-subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+/* ===== CONTAINER ===== */
+.contact-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* ===== LEFT SIDE (INFO) ===== */
+.contact-container aside h4 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.muted {
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+/* ===== FORM ===== */
+#contactform {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+#contactform input,
+#contactform textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: 1px solid #cbd5f5;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+#contactform input:focus,
+#contactform textarea:focus {
+  border-color: #2563eb;
+}
+
+/* ===== BUTTON ===== */
+#contactform button {
+  width: 100%;
+  padding: 12px;
+  background:green;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#contactform button:hover {
+  background:darkgreen;
+  transform: translateY(-2px);
+}
+
+/* ===== RESPONSE TEXT ===== */
+#response {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
