@@ -1,0 +1,175 @@
+@media(max-width:768px){
+    .menu-toggle{
+        display: block;
+    }
+    
+    .navbar{
+        position: fixed;   /* FIX #1 - stop pushing page */
+        top: 60px;         /* menu icon ke niche */
+        right: -260px;     /* hidden by default */
+        width: 240px;
+        background: #fff;
+        padding: 15px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        z-index: 9999;
+        transition: 0.3s ease;   /* smooth slide */
+        display: block;    /* FIX #2 */
+    }
+
+    /* MENU OPEN STATE */
+    nav.active{
+        right: 20px;      /* slide in */
+    }
+.navbar ul{
+    flex-direction: column;
+    gap: 20px;
+}
+
+}
+
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .hero p{
+        font-size: 17px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+    .demo .badge{
+        font-size: 12px;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title{
+        font-size: 30px;
+    }
+.course-box{
+    font-size: 15px;
+}
+
+}
+@media (max-width: 768px){
+    .footer-container{
+        font-size: 12px;
+    }
+}
+
+
+/* =============
+=======courses========
+===================== */
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .features {
+    grid-template-columns: 1fr;
+    padding: 40px 16px;
+  }
+
+  .cl {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .feature-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 24px;
+  }
+}
+
+/* ===================
+======about==========
+==================== */
+
+
+/* ===== TABLET ===== */
+@media (max-width: 900px) {
+  .about-container {
+    gap: 30px;
+  }
+
+  .about-content h1 {
+    font-size: 2rem;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content h1 {
+    font-size: 1.9rem;
+  }
+
+  .about-btn {
+    margin: 20px auto 0;
+  }
+}
+
+/* ===== SMALL MOBILE ===== */
+@media (max-width: 480px) {
+  .about-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .about-content p {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* ===============contact==============
+====================================
+================================= */
+
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-subtitle {
+    font-size: 0.95rem;
+  }
+}
+
+/* ===== SMALL MOBILE ===== */
+@media (max-width: 480px) {
+  #contactform {
+    padding: 20px;
+  }
+
+  .contact-title {
+    font-size: 1.6rem;
+  }
+}
+
+
+/* ===== TABLET ===== */
+@media (max-width: 900px) {
+  .contact-container {
+    gap: 25px;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+}
